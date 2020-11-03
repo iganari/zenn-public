@@ -1,5 +1,5 @@
 ---
-title: "" # 記事のタイトル
+title: "test投稿" # 記事のタイトル
 emoji: "😸" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech"
 topics: ["gcp", "free tier"]
