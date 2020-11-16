@@ -13,13 +13,28 @@ GCP の無料枠を使って始める
 3. GCP の初回無料枠に登録する
 
 
+## 必要なもの
+
++ Gmail アカウント
++ クレジットカード
+
+
 ## Google アカウントの作成
 
 WIP
 
 ## GCP のプロジェクトを開設する
 
-WIP
+下記にアクセス
+
+```
+https://console.cloud.google.com/?hl=ja
+```
+
+[](./01.png)
+
+
+
 
 ## GCP の初回無料枠に登録する
 
@@ -33,4 +48,17 @@ WIP
   + https://cloud.google.com/free/docs/gcp-free-tier
 + Start running workloads for free
   + https://cloud.google.com/free
+
+
+
+```
+すべての Cloud Platform プロダクトへのアクセス
+アプリや、ウェブサイト、サービスの構築と実行に必要な Firebase や Google Maps API などがすべて使用できます。
+
+$300 相当のクレジットを無料でご提供
+90 日間有効の $300 分のクレジットで Google Cloud をご利用いただけます。
+
+無料トライアル期間が終了しても、自動的に請求されることはありません
+ロボットでないことを確認するため、お持ちのクレジット カード番号の入力をお願いしています。有料アカウントに手動でアップグレードしない限り、課金されることはありません。
+```
 
