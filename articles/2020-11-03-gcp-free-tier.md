@@ -51,7 +51,6 @@ https://console.cloud.google.com/?hl=ja
 + 無料枠を有効化する
   + 住所とクレジットカードが必要になる
 
-![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/2020-11-03-gcp-free-tier/05.png)
 ![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/2020-11-03-gcp-free-tier/06.png)
 ![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/2020-11-03-gcp-free-tier/07.png)
 ![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/2020-11-03-gcp-free-tier/08.png)
@@ -61,7 +60,6 @@ https://console.cloud.google.com/?hl=ja
 ![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/2020-11-03-gcp-free-tier/09.png)
 ![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/2020-11-03-gcp-free-tier/10.png)
 ![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/2020-11-03-gcp-free-tier/11.png)
-
 
 ## GCP の初回無料枠に登録する
 
