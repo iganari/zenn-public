@@ -2,7 +2,7 @@
 title: "GCP の無料枠を使って始める"
 emoji: "🔰" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech"
-topics: ["gcp", "free tier"]
+topics: ["gcp", "freetier"]
 published: false
 ---
 
@@ -16,24 +16,36 @@ GCP の無料枠を使って始める
 ## 必要なもの
 
 + Gmail アカウント
++ 自分の住所
 + クレジットカード
-
 
 ## Google アカウントの作成
 
 WIP
 
-## GCP のプロジェクトを開設する
+## GCP を開設する
 
-下記にアクセス
++ 下記にアクセス
 
 ```
 https://console.cloud.google.com/?hl=ja
 ```
 
-[](./01.png)
+![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/01.png)
 
 
++ 自分の Gmail でログインする
+
+
+
+
+
+
+
+
+## GCP のプロジェクトを開設する
+
+WIP
 
 
 ## GCP の初回無料枠に登録する
@@ -61,4 +73,7 @@ $300 相当のクレジットを無料でご提供
 無料トライアル期間が終了しても、自動的に請求されることはありません
 ロボットでないことを確認するため、お持ちのクレジット カード番号の入力をお願いしています。有料アカウントに手動でアップグレードしない限り、課金されることはありません。
 ```
+
+画像テスと
+
 
