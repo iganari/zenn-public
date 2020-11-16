@@ -15,5 +15,6 @@ FROM mcr.microsoft.com/vscode/devcontainers/javascript-node:0-${VARIANT}
 # [Optional] Uncomment if you want to install more global node modules
 # RUN sudo -u node npm install -g <your-package-list-here>
 
-RUN npm init --yes
-RUN npm install zenn-cli
+# RUN npm init --yes
+# RUN npm install zenn-cli
+RUN npm install
