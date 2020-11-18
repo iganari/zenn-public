@@ -16,8 +16,8 @@ FROM mcr.microsoft.com/vscode/devcontainers/javascript-node:0-${VARIANT}
 # RUN sudo -u node npm install -g <your-package-list-here>
 
 RUN sudo -u node npm init --yes
-RUN sudo -u node npm install zenn-cli
-RUN sudo -u node npm audit fix
-# RUN sudo npx zenn init
+RUN sudo -u npm install zenn-cli@latest
+# RUN sudo -u node npm audit fix
+RUN sudo npx zenn init
 # RUN npx zenn init
 # RUN npm install
