@@ -117,7 +117,7 @@ https://console.cloud.google.com/
 
 + `Project Name` と `Project Id` が正しく入力し終わったら、作成をクリックします
 
-![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/001-gcp-project-name-rules/05-1.png)
+![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/001-gcp-project-name-rules/05-2.png)
 
 + GCP Project 作成のページが無くなるので、再び赤枠の `My First Project` をクリックします
 
