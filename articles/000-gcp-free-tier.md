@@ -86,6 +86,7 @@ https://cloud.google.com/free/docs/gcp-free-tier
 ![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/2020-11-03-gcp-free-tier/10.png)
 ![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/2020-11-03-gcp-free-tier/11.png)
 
+## まとめ
 
 ここまでで、「GCP を開設し、無料枠を登録する」の設定は終わりとなります!
 
@@ -93,6 +94,6 @@ https://cloud.google.com/free/docs/gcp-free-tier
 
 次は「GCP のプロジェクトの作成」をする必要がありますので、それについては以下のページを参考にして下さい。
 
-WIP
+[GCP のプロジェクト命名規則を考える](https://zenn.dev/iganari/articles/001-gcp-project-name-rules)
 
 Have fun!!  :)
