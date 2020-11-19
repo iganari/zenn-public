@@ -28,7 +28,7 @@ published: false
 
 上記を参考に作成して下さい。
 
-Google アカウントを使用すると、 Gmail や Youtube, Google Play などが使えるようになります。
+Google アカウントを使用すると、 [Gmail](https://about.google/intl/gmail/) や [Youtube](https://www.youtube.com/), [Google Play](https://play.google.com/store) などが使えるようになります。
 
 
 ## GCP を開設する
