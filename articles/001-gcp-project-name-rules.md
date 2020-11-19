@@ -3,7 +3,7 @@ title: "GCP のプロジェクト命名規則を考える"
 emoji: "🔰"
 type: "tech"
 topics: ["gcp"]
-published: false
+published: true
 ---
 
 ## この記事の流れ
@@ -53,8 +53,8 @@ WIP
 {企業識別子}-{サービス識別子}-{環境識別子(3 文字 OR 4 文字)}
 ```
 
-+ 例① 状態が異なる 3 つの環境が必要な場合
-  + example.com 社の `hogehoge` とサービス
++ 例1 状態が異なる 3 つの環境が必要な場合
+  + example.com 社の hogehoge とサービス
   + `本番環境`, `ステージング環境`, `開発環境` はアプリケーションが実際に実行されている GCP Project
 
 ```
@@ -68,8 +68,8 @@ example-hogehoge-stg
 example-hogehoge-dev
 ```
 
-+ 例② 状態が異なる 2 つの環境と 2 つの環境で共通のデータを取り扱う環境が必要な場合
-  + example.com 社の `hogehoge` とサービス
++ 例2 状態が異なる 2 つの環境と、2 つの環境で共通のデータを取り扱う環境が必要な場合
+  + example.com 社の hogehoge というサービス
   + `本番環境` と `開発環境` はアプリケーションが実際に実行されている GCP Project
   + `共通環境` は `本番環境` と `開発環境` の両方から参照したいデータを置いていく GCP Project
     + 例えば、ログ基盤や(共通で管理しておいて良い)データ、CI/CD 実行環境、モニタリング基盤など。
@@ -110,7 +110,7 @@ https://console.cloud.google.com/
 ![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/001-gcp-project-name-rules/04.png)
 
 + `Project Name` と `Project Id` に同じ値を入力します
-  + 例として、Yahoo という会社の PayPay というサービスの開発環境の GCP Project を作ります
+  + 例として、Yahoo という会社の PayPay というサービスの開発環境(dev)の GCP Project を作ります
     + あくまで例です(^^:
     
 ![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/001-gcp-project-name-rules/05-1.png)
