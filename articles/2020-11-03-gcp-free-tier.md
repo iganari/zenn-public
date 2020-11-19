@@ -1,12 +1,12 @@
 ---
-title: "GCP の無料枠を使って始める"
+title: "GCP を開設し、無料枠を登録するまでの流れ"
 emoji: "🔰" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech"
 topics: ["gcp", "freetier"]
 published: false
 ---
 
-GCP の無料枠を使って始める
+## この記事の流れ
 
 1. Google アカウントの作成
 1. GCP のプロジェクトを開設する
@@ -14,9 +14,13 @@ GCP の無料枠を使って始める
 
 ## 必要なもの
 
+以下を事前に用意して下さい
+
 + Gmail アカウント
 + 自分の住所
 + クレジットカード
+
+また、 GCP を Web から操作する際は [Google Chrome](https://www.google.com/chrome/) を使うことをおすすめします
 
 ## Google アカウントの作成
 
