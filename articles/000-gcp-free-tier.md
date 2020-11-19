@@ -38,9 +38,8 @@ Google アカウントが準備出来たら、そのアカウントを使って 
 
 + 下記の URL にアクセスします。
 
-```
 https://console.cloud.google.com/?hl=ja
-```
+
 
 ![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/2020-11-03-gcp-free-tier/01.png)
 
