@@ -20,7 +20,7 @@ published: true
 
 まだ、GCP を未開設の方は下記を参考に開設してみて下さい :)
 
-[GCP を開設し、無料枠を登録するまでの流れ](https://zenn.dev/iganari/articles/000-gcp-free-tier)
+[GCP を開設し、初回無料枠に登録するまでの流れ](https://zenn.dev/iganari/articles/000-gcp-free-tier)
 
 ## GCP の Project について
 

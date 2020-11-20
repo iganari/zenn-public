@@ -1,5 +1,5 @@
 ---
-title: "GCP を開設し、無料枠を登録するまでの流れ"
+title: "GCP を開設し、初回無料枠に登録するまでの流れ"
 emoji: "🔰" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech"
 topics: ["gcp", "freetier"]
