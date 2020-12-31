@@ -6,6 +6,7 @@ topics: ["gcp", "cloudrun"]
 published: true
 ---
 
+本投稿は [Serverless Advent Calendar 2020](https://qiita.com/advent-calendar/2020/serverless) の17日目です。
 
 ## Cloud Run とは
 
