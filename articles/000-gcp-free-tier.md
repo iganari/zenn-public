@@ -1,5 +1,5 @@
 ---
-title: "GCP を開設し、無料枠を登録するまでの流れ"
+title: "GCP を開設し、初回無料枠に登録するまでの流れ"
 emoji: "🔰" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech"
 topics: ["gcp", "freetier"]
@@ -41,23 +41,23 @@ Google アカウントが準備出来たら、そのアカウントを使って 
 https://console.cloud.google.com/?hl=ja
 
 
-![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/2020-11-03-gcp-free-tier/01.png)
+![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/000-gcp-free-tier/01.png)
 
 
 + 自分の Google アカウントでログインします。
   + 例として `iganarigcpsamples@gmail.com` を使ってログインするイメージを貼っています
 
-![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/2020-11-03-gcp-free-tier/02.png)
-![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/2020-11-03-gcp-free-tier/03.png)
+![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/000-gcp-free-tier/02.png)
+![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/000-gcp-free-tier/03.png)
 
 + GCP の利用規約の同意画面が表示されます。
   + しっかり確認してから、同意のチェックをいれて下さい。
 
-![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/2020-11-03-gcp-free-tier/04.png)
+![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/000-gcp-free-tier/04.png)
 
 + GCP を開設することが出来ました!! :)
 
-![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/2020-11-03-gcp-free-tier/05.png)
+000-gcp-free-tier/05.png)
 
 ## GCP の初回無料枠に登録する
 
@@ -73,19 +73,20 @@ https://cloud.google.com/free/docs/gcp-free-tier
 
 + 無料枠を使えるようにするために `有効化` をクリックします。
 
-![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/2020-11-03-gcp-free-tier/06.png)
+![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/000-gcp-free-tier/06.png)
 
 + 住所とクレジットカードが必要になりますので登録して下さい
 
-![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/2020-11-03-gcp-free-tier/07.png)
-![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/2020-11-03-gcp-free-tier/08.png)
-![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/2020-11-03-gcp-free-tier/09.png)
+![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/000-gcp-free-tier/07.png)
+![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/000-gcp-free-tier/08.png)
+![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/000-gcp-free-tier/09.png)
 
 + 必要な情報を登録し終わると、下記のような登録完了のポップアップが表示されます。
 
-![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/2020-11-03-gcp-free-tier/10.png)
-![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/2020-11-03-gcp-free-tier/11.png)
+![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/000-gcp-free-tier/10.png)
+![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/000-gcp-free-tier/11.png)
 
+## まとめ
 
 ここまでで、「GCP を開設し、無料枠を登録する」の設定は終わりとなります!
 
@@ -93,6 +94,6 @@ https://cloud.google.com/free/docs/gcp-free-tier
 
 次は「GCP のプロジェクトの作成」をする必要がありますので、それについては以下のページを参考にして下さい。
 
-WIP
+[GCP のプロジェクト命名規則を考える](https://zenn.dev/iganari/articles/001-gcp-project-name-rules)
 
 Have fun!!  :)

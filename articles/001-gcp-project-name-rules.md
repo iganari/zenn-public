@@ -20,7 +20,7 @@ published: true
 
 まだ、GCP を未開設の方は下記を参考に開設してみて下さい :)
 
-[GCP を開設し、無料枠を登録するまでの流れ](https://zenn.dev/iganari/articles/000-gcp-free-tier)
+[GCP を開設し、初回無料枠に登録するまでの流れ](https://zenn.dev/iganari/articles/000-gcp-free-tier)
 
 ## GCP プロジェクトについて
 
@@ -125,7 +125,7 @@ https://console.cloud.google.com/
 
 + `Project Name` と `Project ID` が正しく入力し終わったら、作成をクリックします
 
-![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/001-gcp-project-name-rules/05-1.png)
+![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/001-gcp-project-name-rules/05-2.png)
 
 + GCP Project 作成のページが無くなるので、再び赤枠の `My First Project` をクリックします
 
