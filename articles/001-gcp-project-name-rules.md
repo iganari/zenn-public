@@ -10,7 +10,6 @@ published: true
 
 1. GCP プロジェクトについて
 1. GCP のリソース階層について
-1. `GCP Project name` と `GCP Project id` について
 1. おすすめの命名規則
 1. 実際にやってみる
 
@@ -37,13 +36,13 @@ GCP のプロジェクトには以下の制約があります
 Project name | 可能 | 可能
 Project ID | 不可 | 不可
 
-GCP Project Id は自分の GCP Project 内外問わず、世界中でユニークである必要があります。
+`Project ID` は自分の GCP プロジェクト内外問わず、世界中でユニークである必要があります。
 
-また、GCP のリソースを表す際は大抵は Project ID が、リソースを一意に指定する Id として使用されます。
+また、GCP のリソースを表す際は大抵は `Project ID` が、リソースを一意に指定する ID として使用されます。
 
-したがって、 `Project ID` を決めた上で project を作成する際に `Project name` = `Project ID` のが望ましいと考えます。
+したがって、 `Project ID` を決めた上で GCP プロジェクトを作成する際に `Project name` = `Project ID` のが望ましいと考えます。
 
-また、既に削除された `Project ID` であれば再度作成が可能ですが、 GCP プロジェクトはシャットダウンを実行した後も30日は保持されるので、その間は重複作成の扱いとなり同じ `Project ID` では作成出来ません。
+既に削除された `Project ID` であれば再度作成が可能ですが、 GCP プロジェクトはシャットダウンを実行した後も30日は保持されるので、その間は重複作成の扱いとなり同じ `Project ID` では作成出来ません。
 
 ## GCP のリソース階層について
 
@@ -117,13 +116,13 @@ https://console.cloud.google.com/
 
 ![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/001-gcp-project-name-rules/04.png)
 
-+ `Project Name` と `Project ID` に同じ値を入力します
++ `Project name` と `Project ID` に同じ値を入力します
   + 例として、Yahoo という会社の PayPay というサービスの開発環境(dev)の GCP Project を作ります
     + あくまで例です(^^:
     
 ![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/001-gcp-project-name-rules/05-1.png)
 
-+ `Project Name` と `Project ID` が正しく入力し終わったら、作成をクリックします
++ `Project name` と `Project ID` が正しく入力し終わったら、作成をクリックします
 
 ![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/001-gcp-project-name-rules/05-2.png)
 
