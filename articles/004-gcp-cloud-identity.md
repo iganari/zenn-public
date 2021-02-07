@@ -1,9 +1,9 @@
 ---
 title: "Cloud Identity について"
-emoji: "🔰" # アイキャッチとして使われる絵文字（1文字だけ）
+emoji: "🏢" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech"
 topics: ["gcp"]
-published: false
+published: true
 ---
 
 ## この記事の流れ
@@ -74,7 +74,7 @@ https://console.cloud.google.com/iam-admin/cloudidentity/consumer
 
 ![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/004-gcp-cloud-identity/03.png)
 
-### 1-4. 右ペインを下の方に行くと `SIGN UP CLOUD IDENTITY` をクリック
+### 1-4. 右ペインを下の方に行くと出てくる `SIGN UP CLOUD IDENTITY` をクリック
 
 ![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/004-gcp-cloud-identity/04.png)
 
