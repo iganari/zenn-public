@@ -6,37 +6,49 @@ topics: ["gcp"]
 published: false
 ---
 
+## この記事の流れ
+
++ Cloud Identity とは
++ Cloud Identity を使うメリット
++ 実際にやってみる
+    + Cloud Identity の初期設定(前半)
+    + Cloud Identity の初期設定(後半)
+    + GCP プロジェクトを作成する
+    + リソース階層におけるフォルダを作成する
+
 ## Cloud Identity とは
 
-WIP
+```
+Cloud Identity は IDaaS（Identity as a Service）ソリューションであり、企業向けモバイル管理（EMM）サービスです。
+Google Workspace で利用できる ID サービスとエンドポイント管理をスタンドアロン型のサービスとして提供します。
+Cloud Identity を利用することで、管理者は Google 管理コンソールからユーザー、アプリ、デバイスを一元管理できます。
 
-## Cloud Run を使うメリット
 
-以下のメリットがあります
+[出典] Cloud Identity とは
+https://support.google.com/cloudidentity/answer/7319251?hl=ja
+```
 
-WIP
+## Cloud Identity を使うメリット
 
-## Google Workspace との違い
+Cloud Identity は基本的には Google Workspace の機能限定版だと捉えて下さい。
 
-基本的には機能限定版
+例えば、独自ドメインで Gmail を使いたい場合は Cloud Identity ではなく Google Workspace を使って下さい。
+
+Cloud Identity 上で作成したアカウントを使用することで、ドメイン内のすべてのユーザーを Google 管理コンソールから管理でき、SSO などの共通 ID サービスが提供されます。
+
+また、Cloud Identity には 2 つのエディションがあります。
+
++ Cloud Identity Free Edition
++ Cloud Identity Premium Edition
+
+詳細は以下の資料を参照して下さい
+
++ [Cloud Identity の機能とエディションの比較](https://support.google.com/cloudidentity/answer/7431902)
++ [Google Workspace の各エディションの比較](https://support.google.com/a/answer/6043385)
 
 ## 実際にやってみる
 
-## ドキュメント
-
-+ 公式ドキュメント
-    + https://cloud.google.com/identity/docs/setup
-    + https://support.google.com/a/answer/7384506?hl=ja
-    + https://support.google.com/cloudidentity/answer/7661263?hl=ja
-    + https://cloud.google.com/identity?hl=ja
-    + https://cloud.google.com/identity/docs?hl=ja
-    + https://support.google.com/a/topic/7386474?hl=ja
-+ クラウドエース
-    + https://www.apps-gcp.com/cloud-identity/
-
-# 実際にやってみる
-
-## 前提条件
+### 前提条件
 
 + GCP コンソールにログインできるアカウントを持っている ---> ①
 + 独自ドメインを持っていること ---> ②
@@ -71,8 +83,6 @@ WIP
 ### 1-4. 右ペインを下の方に行くと `SIGN UP CLOUD IDENTITY` をクリック
 
 ![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/004-gcp-cloud-identity/04.png)
-
-## Cloud Identiry の初期設定
 
 ### 1-5. Cloud Identiry の新規作成ページ
 
@@ -138,11 +148,6 @@ admin@{ドメイン名}
 
 ![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/004-gcp-cloud-identity/16.png)
 
-
-```
-WIP
-```
-
 ### 2-2. 1-12 にて作成したアカウントでログインする
 
 ![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/004-gcp-cloud-identity/17.png)
@@ -181,7 +186,7 @@ WIP
 dig TXT igarashi-test.tech.cloud-ace.jp +short
 ```
 ```
-### 例
+## 例
 
 $ dig TXT igarashi-test.tech.cloud-ace.jp +short
 "google-site-verification=WFARlAjRpeY6XCg8cfmGPvVM8y303j2-eatfPs6w8eo"
@@ -239,7 +244,7 @@ https://admin.google.com/ac/home
 
 ## 3. GCP プロジェクトを作成する
 
-### 3-1. GCP コンソールに戻り、 `プロジェクトを作成` をクリック
+## 3-1. GCP コンソールに戻り、 `プロジェクトを作成` をクリック
 
 ![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/004-gcp-cloud-identity/35.png)
 
@@ -290,4 +295,24 @@ https://admin.google.com/ac/home
 
 ![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/004-gcp-cloud-identity/45.png)
 
-#
+## 参考ドキュメント
+
++ 公式ドキュメント
+    + https://cloud.google.com/identity/docs/setup
+    + https://support.google.com/a/answer/7384506?hl=ja
+    + https://support.google.com/cloudidentity/answer/7661263?hl=ja
+    + https://cloud.google.com/identity?hl=ja
+    + https://cloud.google.com/identity/docs?hl=ja
+    + https://support.google.com/a/topic/7386474?hl=ja
++ クラウドエース
+    + https://www.apps-gcp.com/cloud-identity/
+
+## まとめ
+
+Cloud Identity がどんなものであり、どのように初めるかまでを見てきました。
+
+Cloud Identity を使用することで GCP をより効率的に管理出来るようになります。
+
+では、良いクラウドライフを!!
+
+Have fun!! :)
