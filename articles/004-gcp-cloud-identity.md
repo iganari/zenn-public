@@ -11,10 +11,10 @@ published: false
 + [Cloud Identity とは](#cloud-identity-とは)
 + [Cloud Identity を使うメリット](#cloud-identity-を使うメリット)
 + [実際にやってみる](#実際にやってみる)
-    + [Cloud Identity の初期設定(前半)](#1.-cloud-identity-の初期設定(前半))
-    + [Cloud Identity の初期設定(後半)](#2.-cloud-identity-の初期設定(後半))
-    + [GCP プロジェクトを作成する](#3.-gcp-プロジェクトを作成する)
-    + [リソース階層におけるフォルダを作成する](#4.-リソース階層におけるフォルダを作成する)
+    + [1. Cloud Identity の初期設定(前半)](#1.-cloud-identity-の初期設定(前半))
+    + [2. Cloud Identity の初期設定(後半)](#2.-cloud-identity-の初期設定(後半))
+    + [3. GCP プロジェクトを作成する](#3.-gcp-プロジェクトを作成する)
+    + [4. リソース階層におけるフォルダを作成する](#4.-リソース階層におけるフォルダを作成する)
 
 ## Cloud Identity とは
 
