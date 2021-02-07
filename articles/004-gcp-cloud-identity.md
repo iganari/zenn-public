@@ -177,13 +177,13 @@ admin@{ドメイン名}
 ![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/004-gcp-cloud-identity/24.png)
 
 ```
-dig TXT igarashi-test.tech.cloud-ace.jp +short
+dig TXT {自分で設定したドメイン} +short
 ```
 ```
 ## 例
 
-$ dig TXT igarashi-test.tech.cloud-ace.jp +short
-"google-site-verification=WFARlAjRpeY6XCg8cfmGPvVM8y303j2-eatfPs6w8eo"
+$ dig TXT {自分で設定したドメイン} +short
+"google-site-verification=XXXXXXXXXXXXXXXXXXXXXXXXXXX"
 ```
 
 ### 2-9. 設定した TXT レコードを Google が確認
