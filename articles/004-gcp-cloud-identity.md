@@ -8,13 +8,13 @@ published: false
 
 ## この記事の流れ
 
-+ Cloud Identity とは
-+ Cloud Identity を使うメリット
-+ 実際にやってみる
-    + Cloud Identity の初期設定(前半)
-    + Cloud Identity の初期設定(後半)
-    + GCP プロジェクトを作成する
-    + リソース階層におけるフォルダを作成する
++ [Cloud Identity とは](#cloud-identity-とは)
++ [Cloud Identity を使うメリット](#cloud-identity-を使うメリット)
++ [実際にやってみる](#実際にやってみる)
+    + [Cloud Identity の初期設定(前半)](#1.-cloud-identity-の初期設定(前半))
+    + [Cloud Identity の初期設定(後半)](#2.-cloud-identity-の初期設定(後半))
+    + [GCP プロジェクトを作成する](#3.-gcp-プロジェクトを作成する)
+    + [リソース階層におけるフォルダを作成する](#4.-リソース階層におけるフォルダを作成する)
 
 ## Cloud Identity とは
 
@@ -52,23 +52,15 @@ Cloud Identity 上で作成したアカウントを使用することで、ド�
 
 + GCP コンソールにログインできるアカウントを持っている ---> ①
 + 独自ドメインを持っていること ---> ②
-    + ドメイン認証を行う必要があるので
+    + ドメイン認証を行う必要があるため。
 
-
-+ 情報は 2021 年 2 月現在の情報です
+:warning: 情報は 2021 年 2 月現在の情報です
 
 ## 1. Cloud Identity の初期設定(前半)
 
 https://console.cloud.google.com/iam-admin/cloudidentity/consumer
 
-
-### 1-0. ① で GCP コンソールにログインしておく
-
-WIP
-
-### 1-1. GCP コンソールから `IAM & Admin` >> `Identity & Organization` を遷移し、 `GO TO THE CHECKLIST` をクリック
-
-まずは ① でGCP コンソールにログインしておく
+### 1-1. ① で GCP コンソールにログインしておき、 `IAM & Admin` >> `Identity & Organization` を遷移し、 `GO TO THE CHECKLIST` をクリック
 
 ![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/004-gcp-cloud-identity/01.png)
 
@@ -244,7 +236,7 @@ https://admin.google.com/ac/home
 
 ## 3. GCP プロジェクトを作成する
 
-## 3-1. GCP コンソールに戻り、 `プロジェクトを作成` をクリック
+### 3-1. GCP コンソールに戻り、 `プロジェクトを作成` をクリック
 
 ![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/004-gcp-cloud-identity/35.png)
 
@@ -309,10 +301,10 @@ https://admin.google.com/ac/home
 
 ## まとめ
 
-Cloud Identity がどんなものであり、どのように初めるかまでを見てきました。
+Cloud Identity がどんなものであり、どのように初めるかまでを記事の中で見てきました。
 
-Cloud Identity を使用することで GCP をより効率的に管理出来るようになります。
+Cloud Identity を使用することで GCP をより効率的に管理出来るようになりますので、是非使ってみて下さい。
 
-では、良いクラウドライフを!!
+良いクラウドライフを!!
 
 Have fun!! :)
