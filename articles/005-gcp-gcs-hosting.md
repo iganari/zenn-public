@@ -1,14 +1,16 @@
 ---
 title: "静的サイトホスティングの話"
-emoji: "🔰" # アイキャッチとして使われる絵文字（1文字だけ）
+emoji: "📄" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech"
 topics: ["gcp"]
 published: false
 ---
 
+## 概要
+
 クラウドを使って静的サイトをデプロイしたいと思いたいときがある
-静的サイトとはサーバレンダリングをしない構成のweb
-一般的には HTML CSS javascript で構成されている
+静的サイトとはサーバサイドのスクリプトを有しないファイル構成のwebサイト
+一般的には HTML CSS javascript 等で構成されている
 
 
 AWS だと S3 を使ったやりかたがある
@@ -25,14 +27,14 @@ GCP だとこれ
 このzennの記事ではGCPにて静的サイトホスティングする場合のやり方とそのコンポーネントを理解するところを目指します
 
 
+
+## GCP における静的サイトホスティング
+
 GCP の場合は一般的には「 LB + オブジェクトストーレージ」という構成になる
-一般的には表現したのは、GCSだけでも一般公開出来るが、GCP ProjectIDがURL露見してしまうため、限定的な用途以外での使用は基本的にはお勧めできない
+一般的には表現したのは、GCSだけでも一般公開出来るが GCP ProjectIDがURL露見してしまうため、限定的な用途以外での使用は基本的にはお勧めできない
+故に基本的は「 LB + オブジェクトストーレージ」の運用が一般的になります
 
-本題
-
-GCP で静的サイトホスティングする場合は LB + GCS になる
-LBはこれを使う
-GCSはこんな感じAWS でいればS3、AzureであればBlobを想像してもらえれば良い
+GCP の LB は用途ごとに種類が分かれていて、今回のように外部公開するためのLBはglobal cloud load balancer = GCLB と言います
 
 
 ## 実際にやってみる
@@ -47,12 +49,15 @@ GCSはこんな感じAWS でいればS3、AzureであればBlobを想像して�
 
 ![](https://raw.githubusercontent.com/iganari/package-gcp/main/storage/hosting-static-website-multi/img/01.png)
 
-
+## 解説
 
 ここでは解説をしていきます
 
-なお、ちゃんとした説明を見たい場合は公式ドキュメントを見ましょ
+なお、ちゃんとした説明を見たい場合は公式ドキュメントを見ましょう
 
 [External HTTP(S) Load Balancing overview | 外部 HTTP(S) 負荷分散の概要](https://cloud.google.com/load-balancing/docs/https?hl=en)
 
 
+![](https://cloud.google.com/load-balancing/images/external-l7-lb-components.svg)
+
+### GCP のロードバランサーは複数ある
