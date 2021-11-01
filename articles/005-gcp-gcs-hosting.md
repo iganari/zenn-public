@@ -43,9 +43,13 @@ GCP の LB は用途ごとに種類が分かれていて、今回のように外
 
 + [単一の静的ウェブサイトのホスティング](https://github.com/iganari/package-gcp/tree/main/storage/hosting-static-website-single)
 
+※ 作成出来るもののイメージ
+
 ![](https://raw.githubusercontent.com/iganari/package-gcp/main/storage/hosting-static-website-single/img/01.png)
 
 + [複数の静的ウェブサイトのホスティング](https://github.com/iganari/package-gcp/tree/main/storage/hosting-static-website-multi)
+
+※ 作成出来るもののイメージ
 
 ![](https://raw.githubusercontent.com/iganari/package-gcp/main/storage/hosting-static-website-multi/img/01.png)
 
@@ -58,6 +62,49 @@ GCP の LB は用途ごとに種類が分かれていて、今回のように外
 [External HTTP(S) Load Balancing overview | 外部 HTTP(S) 負荷分散の概要](https://cloud.google.com/load-balancing/docs/https?hl=en)
 
 
-![](https://cloud.google.com/load-balancing/images/external-l7-lb-components.svg)
+![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/005-gcp-gcs-hosting/01.png)
+
+![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/005-gcp-gcs-hosting/02.png)
 
 ### GCP のロードバランサーは複数ある
+
+### 1. Forwarding rules
+
+GCLB を設定する場合、GCLB の中で一番フロントにあたるコンポーネントです。
+
+ここでは、以下のような情報を登録します
+
++ IP アドレス
+  + 例: 34.102.192.124
++ 受け付けるポート
+  + 例: 443
+
+また、次にトラフィックを流す `Target Proxy` の指定もするため、`Forwarding rules` の設定は `Target Proxy` を設定した後に行います
+
+### 2. Target Proxy
+
+Forwarding rules から次にトラフィックが流れてくる部分です
+
+HTTPS を設定する場合は、ここが SSL 終端になります。
+
+また、次にトラフィックを流す `URL map` や SSL 証明書として `Google-managed SSL certificates` の指定もするため、`Target Proxy` の設定は `URL map` や `Google-managed SSL certificates` を設定した後に行います
+
+
+### 3. Google-managed SSL certificates
+
+GCP が取得・管理してくれるドメイン検証(DV)の証明書です
+1つの証明書で複数のホスト名をサポートし、証明書を自動更新しれくれるので、更新期限の管理や更新作業を考えなくて良くなります
+
+注意点として、1つの証明書で複数のホスト名をサポートしてくれますが、ワイルドカードとして使うことは出来ません(2021年3月時点)
+
+また、GCP のプロジェクトの中で設置出来るドメインの数の上限があります
+
+1つの証明書で複数のホスト名 = 上限100
+
+https://cloud.google.com/load-balancing/docs/quotas#ssl_certificates
+
+
+1 つの target proxy にぶら下げることが出来る ssl cert の上限は 15
+https://cloud.google.com/load-balancing/docs/quotas#target_pools_and_target_proxies
+
+### 4. URL map
