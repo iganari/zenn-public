@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  zenn-local:
+    build: .
+    container_name: zenn-local
+    ports:
+      - "8080:8000"
+    restart: always
+    volumes:
+      - "./:/usr/app"
+    tty: true
