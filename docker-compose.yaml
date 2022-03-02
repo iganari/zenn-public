@@ -1,4 +1,4 @@
-version: '3'
+version: '3.9'
 
 services:
   zenn-local:
@@ -9,4 +9,11 @@ services:
     restart: always
     volumes:
       - "./:/usr/app"
+    command: /bin/bash -c "npx zenn preview"
     tty: true
+    networks:
+      - zenn-local
+
+networks:
+  zenn-local:
+    driver: bridge
