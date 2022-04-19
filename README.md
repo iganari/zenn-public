@@ -1,5 +1,15 @@
 # zenn-public
 
+## Zenn の URL
+
++ パブリックには下記の URL 先にデプロイされる
+
+https://zenn.dev/iganari
+
+## デプロイ方法
+
+WIP
+
 ## ローカルでの記事のプレビューの仕方
 
 + Docker Compose を起動する
