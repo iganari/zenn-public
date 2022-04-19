@@ -1,4 +1,7 @@
-```
-GCP を開設し、初回無料枠に登録するまでの流れ を移動するためのページ
-000-gcp-free-tier.md
-```
+---
+title: "WIP: 000-gcp-free-tier"
+emoji: "⛔" # アイキャッチとして使われる絵文字（1文字だけ）
+type: "tech"
+topics: ["gcp"]
+published: false
+---

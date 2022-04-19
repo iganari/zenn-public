@@ -1,4 +1,7 @@
-```
-Cloud Run の始めの一歩 を移動するためのページ
-002-gcp-first-cloudrun.md
-```
+---
+title: "WIP: 002-gcp-first-cloudrun"
+emoji: "⛔" # アイキャッチとして使われる絵文字（1文字だけ）
+type: "tech"
+topics: ["gcp"]
+published: false
+---

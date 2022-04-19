@@ -1,4 +1,7 @@
-```
-GCP のプロジェクト命名規則を考える を移動するためのページ
-001-gcp-project-name-rules.md
-```
+---
+title: "WIP: 001-gcp-project-name-rules"
+emoji: "⛔" # アイキャッチとして使われる絵文字（1文字だけ）
+type: "tech"
+topics: ["gcp"]
+published: false
+---
