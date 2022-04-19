@@ -1,0 +1,19 @@
+version: '3.9'
+
+services:
+  zenn-local:
+    build: .
+    container_name: zenn-local
+    ports:
+      - "8080:8000"
+    restart: always
+    volumes:
+      - "./:/usr/app"
+    command: /bin/bash -c "npx zenn preview"
+    tty: true
+    networks:
+      - zenn-local
+
+networks:
+  zenn-local:
+    driver: bridge
