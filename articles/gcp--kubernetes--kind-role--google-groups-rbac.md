@@ -3,7 +3,7 @@ title: "GKE で Google Groups for RBAC を設定してみる"
 emoji: "👨‍👦‍👦" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech"
 topics: ["gcp", "gws"]
-published: false
+published: true
 ---
 
 ## 概要
