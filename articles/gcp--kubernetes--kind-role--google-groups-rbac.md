@@ -1,5 +1,5 @@
 ---
-title: "Google Groups for RBAC を設定してみる"
+title: "GKE で Google Groups for RBAC を設定してみる"
 emoji: "👨‍👦‍👦" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech"
 topics: ["gcp", "gws"]
@@ -29,17 +29,21 @@ https://cloud.google.com/kubernetes-engine/docs/how-to/role-based-access-control
 
 ## 注意
 
-3 つの Google アカウントが出てきます
+### 3 つの Google アカウントが出てきます
 
 + `gke-admin@{Your_Domain}`
 + `rbactest-user-xxx@{Your_Domain}`
 + `rbactest-user-yyy@{Your_Domain}`
 
-3 つの Google グループが出てきます
+### 3 つの Google グループが出てきます
 
 + `gke-security-group@{Your_Domain}`
 + `rbactest-group-aaa@{Your_Domain}`
 + `rbactest-group-bbb@{Your_Domain}`
+
+### 関連ページ
+
+この記事は [Package GCP / Google Groups for RBAC を設定してみる](https://github.com/iganari/package-gcp/tree/main/kubernetes/kind-role-rolebinding/google-groups-rbac) が元になっています
 
 ## 1. 準備
 
