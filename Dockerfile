@@ -4,6 +4,7 @@ FROM node:${_TAG}
 
 WORKDIR /usr/app
 
-RUN npm install zenn-cli@latest
+# https://www.npmjs.com/package/zenn-cli
+RUN npm install zenn-cli@0.1.110
 
 # ENTRYPOINT ["npx", "zenn", "preview"]
