@@ -21,11 +21,11 @@ Configure role-based access control ( ロールベースのアクセス制御を
 https://cloud.google.com/kubernetes-engine/docs/how-to/role-based-access-control
 ```
 
-![](/images/tmp/gcp--kubernetes--kind-role--google-groups-rbac/0-01.png)
+![](https://raw.githubusercontent.com/iganari/package-gcp/main/kubernetes/kind-role-rolebinding/google-groups-rbac/img/0-01.png)
 
-![](/images/tmp/gcp--kubernetes--kind-role--google-groups-rbac/0-02.png)
+![](https://raw.githubusercontent.com/iganari/package-gcp/main/kubernetes/kind-role-rolebinding/google-groups-rbac/img/0-02.png)
 
-![](/images/tmp/gcp--kubernetes--kind-role--google-groups-rbac/0-03.png)
+![](https://raw.githubusercontent.com/iganari/package-gcp/main/kubernetes/kind-role-rolebinding/google-groups-rbac/img/0-03.png)
 
 ## 注意
 
@@ -53,12 +53,12 @@ https://cloud.google.com/kubernetes-engine/docs/how-to/role-based-access-control
   + `rbactest-group-bbb@{Your_Domain}`
     + `rbactest-user-yyy@{Your_Domain}` が入っている
 
-![](/images/tmp/gcp--kubernetes--kind-role--google-groups-rbac/1-01.png)
+![](https://raw.githubusercontent.com/iganari/package-gcp/main/kubernetes/kind-role-rolebinding/google-groups-rbac/img/1-01.png)
 
 + `gke-security-groups@{Your_Domain}` というグループを作成します
   + 先程作成した Google Group をいれる
 
-![](/images/tmp/gcp--kubernetes--kind-role--google-groups-rbac/1-02.png)
+![](https://raw.githubusercontent.com/iganari/package-gcp/main/kubernetes/kind-role-rolebinding/google-groups-rbac/img/1-02.png)
 
 ### GKE Cluster の作成
 
@@ -75,7 +75,7 @@ export _region='asia-northeast1'
 export _sub_network_range='10.146.0.0/20'
 ```
 
-![](/images/tmp/gcp--kubernetes--kind-role--google-groups-rbac/1-03.png)
+![](https://raw.githubusercontent.com/iganari/package-gcp/main/kubernetes/kind-role-rolebinding/google-groups-rbac/img/1-03.png)
 
 ### IAM Role を付与
 
@@ -108,7 +108,7 @@ gcloud beta projects add-iam-policy-binding ${_gcp_pj_id} \
 gcloud beta projects get-iam-policy ${_gcp_pj_id}
 ```
 
-![](/images/tmp/gcp--kubernetes--kind-role--google-groups-rbac/1-04.png)
+![](https://raw.githubusercontent.com/iganari/package-gcp/main/kubernetes/kind-role-rolebinding/google-groups-rbac/img/1-04.png)
 
 ## 2. Pod を配置
 
@@ -227,7 +227,7 @@ rbactest-b-pod-1   1/1     Running   0          5h28m
 rbactest-b-pod-2   1/1     Running   0          5h28m
 ```
 
-![](/images/tmp/gcp--kubernetes--kind-role--google-groups-rbac/2-01.png)
+![](https://raw.githubusercontent.com/iganari/package-gcp/main/kubernetes/kind-role-rolebinding/google-groups-rbac/img/2-01.png)
 
 参考: [Package GCP | kind: Pod](https://github.com/iganari/package-gcp/tree/main/kubernetes/kind-pod)
 
@@ -258,7 +258,7 @@ gcloud beta container clusters update ${_common}-clt \
   --project ${_gcp_pj_id}
 ```
 
-![](/images/tmp/gcp--kubernetes--kind-role--google-groups-rbac/2-02.png)
+![](https://raw.githubusercontent.com/iganari/package-gcp/main/kubernetes/kind-role-rolebinding/google-groups-rbac/img/2-02.png)
 
 ### Role と RoleBinding をデプロイ
 
