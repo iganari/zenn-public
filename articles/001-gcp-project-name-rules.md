@@ -31,10 +31,11 @@ published: true
 
 上記の識別子は以下の制約があります
 
-種類 | 後から変更 | 重複
-:--- | :--- | :---
-Project name | 可能 | 可能
-Project ID | 不可 | 不可
+種類 | 自分で設定 | 後から変更 | 重複
+:--- | :--- | :--- | :---
+Project name | 可能 | 可能 | 可能
+Project ID | 可能 | 不可 | 不可
+Project number | 不可 | 不可 | 不可
 
 `Project ID` は自分の GCP プロジェクト内外問わず、世界中でユニークである必要があります。
 
@@ -52,7 +53,16 @@ WIP
 
 ![](https://cloud.google.com/resource-manager/img/cloud-folders-hierarchy.png)
 
-## おすすめの命名規則
+## Project ID の命名制限
+
++ 6～30 文字
++ 小文字、数字、ハイフンのみ
++ 先頭は英文字(数字やハイフンは使えない)
++ 末尾にハイフンは使えない
++ 過去に使用した ID も使用できない
++ `google` や `ssl` という文字列は使えない
+
+## おすすめの Project ID の命名規則
 
 個人的におすすめだと思う `Project ID` (と `Project name`)の命名規則を紹介します :)
 
