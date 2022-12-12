@@ -8,7 +8,7 @@ https://zenn.dev/iganari
 
 ## デプロイ方法
 
-WIP
+GitHub 連携をしているので、 main branch に merge したタイミングで Zenn にデプロイされる
 
 ## ローカルでの記事のプレビューの仕方
 
@@ -30,3 +30,17 @@ http://0.0.0.0:8080
 docker-compose stop
 docker-compose rm -f
 ```
+
+## Tips など
+
+### 記事の命名ルール
+
+Zenn にデプロイした場合は、記事の名前が URL になる
+
+元ネタは [Package GCP](https://github.com/iganari/package-gcp) なので、Package GCP でのネストが記事の名前と連動している形にする
+
+### 画像をいれる場合
+
+基本的には [Package GCP](https://github.com/iganari/package-gcp) に格納し、参照させる
+
+上記が間に合わない場合は、この Repository にいれる -> [Zenn | GitHubリポジトリ連携で画像をアップロードする方法](https://zenn.dev/zenn/articles/deploy-github-images)
