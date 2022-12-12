@@ -6,7 +6,7 @@ topics: ["gcp"]
 published: false
 ---
 
-## 注意点　🤚
+## 注意点 🤚
 
 ※1 2022/12 時点の情報です
 
@@ -14,7 +14,7 @@ published: false
 
 https://github.com/iganari/package-gcp
 
-## 概要　💁
+## 概要 💁
 
 Google Cloud の Compute Engine( GCE )では、OS に限らず多くの場合において、外部 IP アドレスを常態的につけることは非推奨となります
 以下のページにて、外部 IP アドレスを持たない GCE Instance へのセキュアなログイン方法である Identity-Aware Proxy( IAP )をまとめます
@@ -24,7 +24,7 @@ Google Cloud の Compute Engine( GCE )では、OS に限らず多くの場合に
 
 ![](https://raw.githubusercontent.com/iganari/package-gcp/main/compute/iap/img/main.png)
 
-## 利用するサービスおよびツール　🛠️
+## 利用するサービスおよびツール 🛠️
 
 ### 1. IAP for TCP forwarding
 
@@ -40,7 +40,7 @@ GCE Instance に接続出来る Remote Desktop および SSH クライアント(
 
 https://github.com/GoogleCloudPlatform/iap-desktop/
 
-## 準備　🏗️
+## 準備 🏗️
 
 外部 IP アドレスを持たない GCE Instance およびネットワークの作成は、以下のページを参考に作成してみてください
 
@@ -128,7 +128,7 @@ IAP Desktop を使って RDP ログインしましょう
 
 ![](https://raw.githubusercontent.com/GoogleCloudPlatform/iap-desktop/master/doc/images/RemoteDesktop_350.gif)
 
-## 例外について　🤷
+## 例外について 🤷
 
 多くの場合において GCE に 外部 IP アドレスをつけることは非推奨となりますが、例外パターンも存在します
 しかしセキュリティリスクに繋がるのと Google Cloud の思想を鑑みると、 IAP を用いた接続方法に徐々にシフトしていくのが正しい姿勢だと個人的に思います
