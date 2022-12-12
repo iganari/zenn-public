@@ -6,7 +6,7 @@ topics: ["gcp"]
 published: false
 ---
 
-## 注意点
+## 注意点　🤚
 
 ※1 2022/12 時点の情報です
 
@@ -14,17 +14,17 @@ published: false
 
 https://github.com/iganari/package-gcp
 
-## 概要
+## 概要　💁
 
 Google Cloud の Compute Engine( GCE )では、OS に限らず多くの場合において、外部 IP アドレスを常態的につけることは非推奨となります
 以下のページにて、外部 IP アドレスを持たない GCE Instance へのセキュアなログイン方法である Identity-Aware Proxy( IAP )をまとめます
 また、この記事は `SSH や RDP などのサーバの中にログインする方法のまとめ` であり、 `Web サーバなどを公開する方法では無い` ので注意してください
 
-## イメージ図
+## イメージ図 🖼️
 
 ![](https://raw.githubusercontent.com/iganari/package-gcp/main/compute/iap/img/main.png)
 
-## 利用するサービスおよびツール
+## 利用するサービスおよびツール　🛠️
 
 ### 1. IAP for TCP forwarding
 
@@ -137,7 +137,7 @@ IAP Desktop を使って RDP ログインしましょう
 
 ![](/images/gcp--compute--iap--2022/x-99.png)
 
-## まとめ
+## まとめ 😉
 
 外部 IP アドレスを持たない GCE Instance へのセキュアなログインをまとめました( 2022/12 時点 )
 ぜひ使ってみてくださいね!! :)
