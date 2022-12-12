@@ -3,7 +3,7 @@ title: "IAP を利用した GCE にセキュアにログインする方法まと
 emoji: "🏢" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech"
 topics: ["gcp"]
-published: true
+published: false
 ---
 
 ## この記事の流れ
