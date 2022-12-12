@@ -1,6 +1,6 @@
 ---
 title: "IAP を利用した GCE にセキュアにログインする方法まとめ 2022 年版"
-emoji: "🏢" # アイキャッチとして使われる絵文字（1文字だけ）
+emoji: "🔐" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech"
 topics: ["gcp"]
 published: false
@@ -112,8 +112,6 @@ Listening on port [13389].
 
 ![](https://raw.githubusercontent.com/iganari/package-gcp/main/compute/iap/img/win-03.png)
 
-
-
 ## CLI が苦手な方 🥺
 
 ### to Linux サーバ
@@ -123,8 +121,6 @@ IAP Desktop を使って SSH ログインしましょう
 [IAP Desktop](https://github.com/GoogleCloudPlatform/iap-desktop/) をインストールし、 SSH セッション機能を使いましょう
 
 ![](https://raw.githubusercontent.com/GoogleCloudPlatform/iap-desktop/master/doc/images/SSH_350.gif)
-
-
 
 ### to Windows サーバ
 
@@ -143,8 +139,7 @@ IAP Desktop を使って RDP ログインしましょう
 
 ![](/images/gcp--compute--iap--2022/x-99.png)
 
-
 ## まとめ
 
 外部 IP アドレスを持たない GCE Instance へのセキュアなログインをまとめました( 2022/12 時点 )
-ぜひ使ってみてくださいね :wink:
+ぜひ使ってみてくださいね!! :)
