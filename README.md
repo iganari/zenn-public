@@ -24,11 +24,30 @@ docker-compose up -d --build
 http://0.0.0.0:8080
 ```
 
++ [トラブルシュート] Docker Compose の状態を確認する
+
+```
+watch -n1 docker-compose ps zenn-local
+```
+
++ [トラブルシュート] ログの確認
+
+```
+docker-compose logs zenn-local
+```
+
++ [トラブルシュート] Docker 単体での起動確認
+
+```
+docker run -it -p 8080:8000 zenn-public-zenn-local /bin/bash
+```
+
 + Docker Compose の停止および削除する
 
 ```
 docker-compose stop
 docker-compose rm -f
+docker rmi zenn-public-zenn-local
 ```
 
 ## Tips など
@@ -44,3 +63,4 @@ Zenn にデプロイした場合は、記事の名前が URL になる
 基本的には [Package GCP](https://github.com/iganari/package-gcp) に格納し、参照させる
 
 上記が間に合わない場合は、この Repository にいれる -> [Zenn | GitHubリポジトリ連携で画像をアップロードする方法](https://zenn.dev/zenn/articles/deploy-github-images)
+
