@@ -9,7 +9,8 @@ services:
     restart: always
     volumes:
       - "./:/usr/app"
-    command: /bin/bash -c "npx zenn preview"
+    working_dir: /usr/app
+    command: /bin/bash -c "npm install && npx zenn preview"
     tty: true
     networks:
       - zenn-local
