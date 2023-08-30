@@ -60,16 +60,16 @@ gcloud コマンドで SSH ログインする際に `--tunnel-through-iap` を�
 ```
 gcloud beta compute ssh {{ Your Google Account Name }}@{{ VM Name }} \
   --tunnel-through-iap \
-  --zone {{ VM Xone }} \
-  --project { Your GCP Project ID }
+  --zone {{ VM Zone }} \
+  --project {{ Your GCP Project ID }}
 ```
 ```
 ### 例
 
 $ gcloud beta compute ssh {{ Your Google Account Name }}@{{ VM Name }} \
   --tunnel-through-iap \
-  --zone {{ VM Xone }} \
-  --project { Your GCP Project ID }
+  --zone {{ VM Zone }} \
+  --project {{ Your GCP Project ID }}
 
 Welcome to Ubuntu 22.04.1 LTS (GNU/Linux 5.15.0-1025-gcp x86_64)
 Last login: Fri Dec  2 23:30:07 2022 from 35.235.242.49
@@ -85,15 +85,15 @@ iganari@iap-test-linux:~$
 ```
 gcloud beta compute start-iap-tunnel {{ VM Name }} 3389 \
   --local-host-port=localhost:13389 \
-  --zone {{ VM Xone }} \
-  --project ${_gcp_pj_id}
+  --zone {{ VM Zone }} \
+  --project {{ Your GCP Project ID }}
 ```
 ```
 ### 例
 $ gcloud beta compute start-iap-tunnel {{ VM Name }} 3389 \
   --local-host-port=localhost:13389 \
-  --zone {{ VM Xone }} \
-  --project ${_gcp_pj_id}
+  --zone {{ VM Zone }} \
+  --project {{ Your GCP Project ID }}
 
 Testing if tunnel connection works.
 Listening on port [13389].

@@ -173,23 +173,23 @@ gcloud auth login -q
 + 作業簡易のため、環境変数を設定します
 
 ```
-export _gcp_pj_id='デプロイしたい GCP Project の ID'
+export _gc_pj_id='デプロイしたい GCP Project の ID'
 export _con_img='コンテナイメージの名前'
 ```
 
 + コンテナイメージを作成して、GCR に PUSH します
 
 ```
-gcloud builds submit --tag gcr.io/${_gcp_pj_id}/${_con_img} --project ${_gcp_pj_id}
+gcloud builds submit --tag gcr.io/${_gc_pj_id}/${_con_img} --project ${_gc_pj_id}
 ```
 
 + GCR に PUSH したコンテナイメージを使って、Cloud Run 上でアプリを実行します
 
 ```
 gcloud run deploy my-first-run \
-    --image gcr.io/${_gcp_pj_id}/${_con_img} \
+    --image gcr.io/${_gc_pj_id}/${_con_img} \
     --platform managed \
-    --project ${_gcp_pj_id} \
+    --project ${_gc_pj_id} \
     --region asia-northeast1 \
     --allow-unauthenticated
 ```
@@ -197,9 +197,9 @@ gcloud run deploy my-first-run \
 ### 例
 
 # gcloud run deploy my-first-run \
->     --image gcr.io/${_gcp_pj_id}/${_con_img} \
+>     --image gcr.io/${_gc_pj_id}/${_con_img} \
 >     --platform managed \
->     --project ${_gcp_pj_id} \
+>     --project ${_gc_pj_id} \
 >     --region asia-northeast1 \
 >     --allow-unauthenticated
 Deploying container to Cloud Run service [my-first-run] in project [My GCP Project ID] region [asia-northeast1]

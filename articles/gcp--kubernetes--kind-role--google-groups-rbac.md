@@ -72,7 +72,7 @@ https://cloud.google.com/kubernetes-engine/docs/how-to/role-based-access-control
     + GKE Cluster に認証するところまでやります
 
 ```
-export _gcp_pj_id='Your GCP Project ID'
+export _gc_pj_id='Your GCP Project ID'
 
 export _common='priauto'
 export _region='asia-northeast1'
@@ -87,7 +87,7 @@ export _sub_network_range='10.146.0.0/20'
 
 ```
 ### gke-admin@{Your_Domain} に Role を付与
-gcloud beta projects add-iam-policy-binding ${_gcp_pj_id} \
+gcloud beta projects add-iam-policy-binding ${_gc_pj_id} \
   --member='user:gke-admin@{Your_Domain}' \
   --role='roles/container.admin'
 ```
@@ -96,12 +96,12 @@ gcloud beta projects add-iam-policy-binding ${_gcp_pj_id} \
 
 ```
 ### rbactest-group-aaa@{Your_Domain} に Role を付与
-gcloud beta projects add-iam-policy-binding ${_gcp_pj_id} \
+gcloud beta projects add-iam-policy-binding ${_gc_pj_id} \
   --member='group:rbactest-group-aaa@{Your_Domain}' \
   --role='roles/container.clusterViewer'
 
 ### rbactest-group-bbb@{Your_Domain} に Role を付与
-gcloud beta projects add-iam-policy-binding ${_gcp_pj_id} \
+gcloud beta projects add-iam-policy-binding ${_gc_pj_id} \
   --member='group:rbactest-group-bbb@{Your_Domain}' \
   --role='roles/container.clusterViewer'
 ```
@@ -109,7 +109,7 @@ gcloud beta projects add-iam-policy-binding ${_gcp_pj_id} \
 + IAM を確認します
 
 ```
-gcloud beta projects get-iam-policy ${_gcp_pj_id}
+gcloud beta projects get-iam-policy ${_gc_pj_id}
 ```
 
 ![](https://raw.githubusercontent.com/iganari/package-gcp/main/kubernetes/kind-role-rolebinding/google-groups-rbac/img/1-04.png)
@@ -244,13 +244,13 @@ rbactest-b-pod-2   1/1     Running   0          5h28m
 gcloud beta container clusters create ${_common}-clt \
   --region ${_region} \
   --security-group="gke-security-groups@DOMAIN" \
-  --project ${_gcp_pj_id}
+  --project ${_gc_pj_id}
 
 ### Autopilot mode
 gcloud beta container clusters create-auto ${_common}-clt \
   --region ${_region} \
   --security-group="gke-security-groups@DOMAIN" \
-  --project ${_gcp_pj_id}
+  --project ${_gc_pj_id}
 ```
 
 + 既存の GKE Cluster の作成時に適用します
@@ -259,7 +259,7 @@ gcloud beta container clusters create-auto ${_common}-clt \
 gcloud beta container clusters update ${_common}-clt \
   --region ${_region} \
   --security-group="gke-security-groups@DOMAIN" \
-  --project ${_gcp_pj_id}
+  --project ${_gc_pj_id}
 ```
 
 ![](https://raw.githubusercontent.com/iganari/package-gcp/main/kubernetes/kind-role-rolebinding/google-groups-rbac/img/2-02.png)
@@ -374,7 +374,7 @@ gcloud auth login --no-launch-browser -q
 ```
 gcloud beta container clusters get-credentials ${_common}-clt \
   --region ${_region} \
-  --project ${_gcp_pj_id}
+  --project ${_gc_pj_id}
 ```
 
 + Namespace を確認します
@@ -418,7 +418,7 @@ gcloud auth login --no-launch-browser -q
 ```
 gcloud beta container clusters get-credentials ${_common}-clt \
   --region ${_region} \
-  --project ${_gcp_pj_id}
+  --project ${_gc_pj_id}
 ```
 
 + Namespace を確認します
