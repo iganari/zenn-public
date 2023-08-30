@@ -2,11 +2,11 @@
 title: "Google Cloud のプロジェクトの Project ID の命名規則を考える"
 emoji: "🔰"
 type: "tech"
-topics: ["googlecloud", "iam"]
+topics: ["googlecloud", "resourcemanager"]
 published: false
 ---
 
-## 概要
+# 概要
 
 この記事は Google Cloud( 以下 GC ) のプロジェクトの **Name** / **ID** / **Number** の命名規則についての記事になります。
 
@@ -14,15 +14,14 @@ published: false
 
 [Google Cloud を開設し、初回無料枠に登録するまでの流れ](https://zenn.dev/iganari/articles/000-gcp-free-tier)
 
-
-## この記事の流れ
+# この記事の流れ
 
 1. GC のプロジェクトについて
 1. Project ID の制約
 1. おすすめの Project ID の命名規則
 1. 実際にやってみる
 
-## 1. GC のプロジェクトについて
+# 1. GC のプロジェクトについて
 
 プロジェクトの識別子は以下の 3 つがあります。
 
@@ -81,9 +80,9 @@ GC のプロジェクトの識別子がコロコロ変わる場合、仮に 1 �
 
 ### 注意点
 
-既に削除された `Project ID` であれば再度作成が可能ですが、 GCP プロジェクトはシャットダウンを実行した後も30日は保持されるので、その間は重複作成の扱いとなり同じ `Project ID` では作成出来ません。
+既に削除された `Project ID` であれば再度作成が可能ですが、 GC プロジェクトはシャットダウンを実行した後も30日は保持されるので、その間は重複作成の扱いとなり同じ `Project ID` では作成出来ません。
 
-## 2. Project ID の制約
+# 2. Project ID の制約
 
 + 6～30 文字
 + 英小文字、数字、ハイフンのみ
@@ -94,7 +93,7 @@ GC のプロジェクトの識別子がコロコロ変わる場合、仮に 1 �
 
 https://cloud.google.com/resource-manager/docs/creating-managing-projects?hl=en#before_you_begin
 
-## 3. おすすめの Project ID の命名規則
+# 3. おすすめの Project ID の命名規則
 
 個人的におすすめだと思う `Project ID` (と `Project name`)の命名規則を紹介します :)
 
@@ -134,7 +133,7 @@ example-hogehoge-dev
 example-hogehoge-cmn
 ```
 
-## 4. 実際にやってみる
+# 4. 実際にやってみる
 
 ※ 簡易のため日本語表記でスクリーンショットを取っていますので言語設定によっては表示されている文言が変わります。
 
@@ -182,12 +181,12 @@ https://console.cloud.google.com/
 
 ![](/images/gcp--cloud-resource-manager--project-id-rules/04-09.png)
 
-## 参考 URL
+# 参考 URL
 
 + さらにベストプラクティスを学びたい人用
   + [Best practices for enterprise organizations | エンタープライズ企業のベスト プラクティス](https://cloud.google.com/docs/enterprise/best-practices-for-enterprise-organizations?hl=en)
 
-## まとめ
+# まとめ
 
 GC のプロジェクトの 3 つ識別子の Project ID の重要性を明らかにした上で、Project ID の命名規則の例をまとめました。
 
