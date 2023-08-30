@@ -68,11 +68,16 @@ GC のプロジェクトの識別子がコロコロ変わる場合、仮に 1 �
 
 **以上の 3 点の理由から、 GC のプロジェクトの識別子は Project ID が一番重要です**
 
-+ Project Name について
-  + 人が見やすくするためだけの識別し。特別な意味合いを持たせると混乱するので ID と一緒にしておくと良い
+![](/images/gcp--cloud-resource-manager--project-id-rules/01-01.png)
 
-+ Project Number について
-  + ユーザはいつもは見ない。たまに見る。頭の片隅に覚えておく程度で良い
+**その他の識別子について**
+
++ Project Name
+  + ユーザが見やすくするための識別子です
+  + 特別な意味合いを持たせると混乱するので Project ID と一緒にしておくと良いです
++ Project Number
+  + 普段の使い方ではあまり見ない識別子です
+  + ユーザが管理出来るものでは無いので、「Project Number というのもあるんだな」くらいに覚えておくと良いと思います
 
 ### 注意点
 
@@ -139,43 +144,43 @@ https://console.cloud.google.com/
 
 + 赤枠の `My First Project` をクリックします
 
-![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/001-gcp-project-name-rules/01.png)
+![](/images/gcp--cloud-resource-manager--project-id-rules/04-01.png)
 
 + 表示された画面の右上に `新しいプロジェクト` があるのでクリックします
 
-![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/001-gcp-project-name-rules/02.png)
+![](/images/gcp--cloud-resource-manager--project-id-rules/04-02.png)
 
 + 赤枠がついている `編集` をクリックします
 
-![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/001-gcp-project-name-rules/03.png)
+![](/images/gcp--cloud-resource-manager--project-id-rules/04-03.png)
 
 + `Project ID` を入力する項目が出現します
 
-![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/001-gcp-project-name-rules/04.png)
+![](/images/gcp--cloud-resource-manager--project-id-rules/04-04.png)
 
 + `Project Name` と `Project ID` に同じ値を入力します
   + 例として、Yahoo という会社の Pay-P-Pay というサービスの開発環境(dev)の GC のプロジェクトを作ります
     + あくまで例です(^^:
     
-![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/001-gcp-project-name-rules/05-1.png)
+![](/images/gcp--cloud-resource-manager--project-id-rules/04-05.png)
 
 + `Project name` と `Project ID` が正しく入力し終わったら、作成をクリックします
 
-![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/001-gcp-project-name-rules/05-2.png)
+![](/images/gcp--cloud-resource-manager--project-id-rules/04-06.png)
 
 + GC のプロジェクト 作成のページが無くなるので、再び赤枠の `My First Project` をクリックします
 
-![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/001-gcp-project-name-rules/06.png)
+![](/images/gcp--cloud-resource-manager--project-id-rules/04-07.png)
 
 + 先程作成した GC のプロジェクトが表示されていることを確認出来ました :)
   + 名前の欄からその GC のプロジェクトをクリックします
 
-![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/001-gcp-project-name-rules/07.png)
+![](/images/gcp--cloud-resource-manager--project-id-rules/04-08.png)
 
 + 先程、 `My First Project` と表示されていた箇所が自分の作成した GC のプロジェクトと同じ(ここの表示は `Project Name`)になっていることが確認出来ます
   + また、 URL にも `Project ID` が入っていることが確認出来ます
 
-![](https://raw.githubusercontent.com/iganari/zenn-public/main/articles/images/001-gcp-project-name-rules/08.png)
+![](/images/gcp--cloud-resource-manager--project-id-rules/04-09.png)
 
 ## 参考 URL
 
