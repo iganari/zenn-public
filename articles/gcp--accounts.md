@@ -16,7 +16,7 @@ https://github.com/iganari/package-gcp/tree/main/_accounts
 
 ## 全体
 
-![](https://github.com/iganari/package-gcp/blob/main/_accounts/_img/01-all.png)
+![](https://raw.githubusercontent.com/iganari/package-gcp/main/_accounts/_img/01-all.png)
 
 ### サマリー
 
@@ -30,7 +30,7 @@ https://github.com/iganari/package-gcp/tree/main/_accounts
 
 ## Google Account
 
-![](https://github.com/iganari/package-gcp/blob/main/_accounts/_img/02-google-account.png)
+![](https://raw.githubusercontent.com/iganari/package-gcp/main/_accounts/_img/02-google-account.png)
 
 - 概要
   - Google のサービスを利用する際に必要になるアカウント
@@ -44,7 +44,7 @@ https://github.com/iganari/package-gcp/tree/main/_accounts
 
 ## Google Group
 
-![](https://github.com/iganari/package-gcp/blob/main/_accounts/_img/03-google-group.png)
+![](https://raw.githubusercontent.com/iganari/package-gcp/main/_accounts/_img/03-google-group.png)
 
 - 概要
   - 複数の Google アカウントを束ねるグループ
@@ -57,7 +57,7 @@ https://github.com/iganari/package-gcp/tree/main/_accounts
 
 ## Cloud Identity
 
-![](https://github.com/iganari/package-gcp/blob/main/_accounts/_img/04-cloud-identity.png)
+![](https://raw.githubusercontent.com/iganari/package-gcp/main/_accounts/_img/04-cloud-identity.png)
 
 - 概要
   - 同じドメインのアカウント全体を指すグループ
@@ -68,7 +68,7 @@ https://github.com/iganari/package-gcp/tree/main/_accounts
 
 ## Service Account
 
-![](https://github.com/iganari/package-gcp/blob/main/_accounts/_img/05-service-account.png)
+![](https://raw.githubusercontent.com/iganari/package-gcp/main/_accounts/_img/05-service-account.png)
 
 - 概要
   - プログラムおよびサーバ、特定の Google Cloud のサービスが使用するアカウント
@@ -81,7 +81,7 @@ https://github.com/iganari/package-gcp/tree/main/_accounts
 
 ## Billing Account
 
-![](https://github.com/iganari/package-gcp/blob/main/_accounts/_img/06-billing-account.png)
+![](https://raw.githubusercontent.com/iganari/package-gcp/main/_accounts/_img/06-billing-account.png)
 
 - 概要
   - Google Cloud Project で発生した課金の請求先を決めるもの
