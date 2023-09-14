@@ -3,7 +3,7 @@ title: "Google Cloud を利用する際の様々な「アカウント」につ�
 emoji: "📝" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech"
 topics: ["googlecloud", "gcp"]
-published: false
+published: true
 ---
 
 ## 概要
@@ -16,21 +16,21 @@ https://github.com/iganari/package-gcp/tree/main/_accounts
 
 ## 全体
 
-![](https://github.com/iganari/package-gcp/blob/main/_accounts/_img/01-all.png)
+![](https://raw.githubusercontent.com/iganari/package-gcp/main/_accounts/_img/01-all.png)
 
 ### サマリー
 
 アカウント | 用途 | 利用者 | 所属( どこに紐づくか )
 :- | :- | :- | :- 
-[Google Account](./README.md#google-account) | Google Cloud のリソースに対してアクション出来るように設定できる | 基本的には人 | Google Admin( in Google Workspace )
-[Google Group](./README.md#google-group) | 同上 | 同上 | 同上 
-[Cloud Identity](./README.md#cloud-identity) | 同上 | 同上 | 同上
-[Service Account](./README.md#service-account) | 同上 | プログラムやサーバーなどの特定の人を介さないもの | Google Cloud の特定の Project
-[Billing Account](./README.md#billing-account) | Google Cloud の課金について制御するように設定できる | 基本的には人 | Google Cloud の組織( Organization )
+[Google Account](#google-account) | Google Cloud のリソースに対してアクション出来るように設定できる | 基本的には人 | Google Admin( in Google Workspace )
+[Google Group](#google-group) | 同上 | 同上 | 同上
+[Cloud Identity](#cloud-identity) | 同上 | 同上 | 同上
+[Service Account](#service-account) | 同上 | プログラムやサーバーなどの特定の人を介さないもの | Google Cloud の特定の Project
+[Billing Account](#billing-account) | Google Cloud の課金について制御するように設定できる | 基本的には人 | Google Cloud の組織( Organization )
 
 ## Google Account
 
-![](https://github.com/iganari/package-gcp/blob/main/_accounts/_img/02-google-account.png)
+![](https://raw.githubusercontent.com/iganari/package-gcp/main/_accounts/_img/02-google-account.png)
 
 - 概要
   - Google のサービスを利用する際に必要になるアカウント
@@ -44,7 +44,7 @@ https://github.com/iganari/package-gcp/tree/main/_accounts
 
 ## Google Group
 
-![](https://github.com/iganari/package-gcp/blob/main/_accounts/_img/03-google-group.png)
+![](https://raw.githubusercontent.com/iganari/package-gcp/main/_accounts/_img/03-google-group.png)
 
 - 概要
   - 複数の Google アカウントを束ねるグループ
@@ -57,7 +57,7 @@ https://github.com/iganari/package-gcp/tree/main/_accounts
 
 ## Cloud Identity
 
-![](https://github.com/iganari/package-gcp/blob/main/_accounts/_img/04-cloud-identity.png)
+![](https://raw.githubusercontent.com/iganari/package-gcp/main/_accounts/_img/04-cloud-identity.png)
 
 - 概要
   - 同じドメインのアカウント全体を指すグループ
@@ -68,7 +68,7 @@ https://github.com/iganari/package-gcp/tree/main/_accounts
 
 ## Service Account
 
-![](https://github.com/iganari/package-gcp/blob/main/_accounts/_img/05-service-account.png)
+![](https://raw.githubusercontent.com/iganari/package-gcp/main/_accounts/_img/05-service-account.png)
 
 - 概要
   - プログラムおよびサーバ、特定の Google Cloud のサービスが使用するアカウント
@@ -81,7 +81,7 @@ https://github.com/iganari/package-gcp/tree/main/_accounts
 
 ## Billing Account
 
-![](https://github.com/iganari/package-gcp/blob/main/_accounts/_img/06-billing-account.png)
+![](https://raw.githubusercontent.com/iganari/package-gcp/main/_accounts/_img/06-billing-account.png)
 
 - 概要
   - Google Cloud Project で発生した課金の請求先を決めるもの
