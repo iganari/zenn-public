@@ -52,6 +52,10 @@ docker rmi zenn-public-zenn-local
 
 ## Tips など
 
+### zenn-cli を docker compose 内で実施している理由
+
+docker compose 起動時に zenn-cli@latest を実行することで、zenn-cli のバージョン管理が容易になるため
+
 ### 記事の命名ルール
 
 Zenn にデプロイした場合は、記事の名前が URL になる

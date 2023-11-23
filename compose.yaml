@@ -1,4 +1,4 @@
-version: '3.9'
+# version: '3.9'
 
 services:
   zenn-local:
@@ -10,11 +10,11 @@ services:
     volumes:
       - "./:/usr/app"
     working_dir: /usr/app
-    command: /bin/bash -c "npm install && npx zenn preview"
+    command: /bin/bash -c "npm install zenn-cli@latest && npx zenn preview"
     tty: true
     networks:
-      - zenn-local
+      - zenn-public
 
 networks:
-  zenn-local:
+  zenn-public:
     driver: bridge
