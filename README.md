@@ -47,6 +47,7 @@ docker run -it -p 8080:8000 zenn-public-zenn-local /bin/bash
 ```
 docker-compose stop
 docker-compose rm -f
+docker ps -a | grep zenn-public-zenn-local | awk '{print $1}' | xargs docker rm -f
 docker rmi zenn-public-zenn-local
 ```
 
@@ -55,6 +56,22 @@ docker rmi zenn-public-zenn-local
 ### zenn-cli を docker compose 内で実施している理由
 
 docker compose 起動時に zenn-cli@latest を実行することで、zenn-cli のバージョン管理が容易になるため
+
+### 記事の新規作成について
+
++ コンテナにログイン
+
+```
+docker exec -it zenn-local /bin/bash
+```
+
++ 記事の新規作成
+
+```
+npx zenn new:article
+```
+
+---> 自動作成した記事をよしなにリネームする
 
 ### 記事の命名ルール
 
