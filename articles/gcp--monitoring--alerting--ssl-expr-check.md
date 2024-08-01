@@ -1,8 +1,8 @@
 ---
-title: "Google Cloud をざっくり紹介"
-emoji: "🚀" # アイキャッチとして使われる絵文字（1文字だけ）
+title: "ノーコード で Google Cloud で SSL 証明書の有効期限チェックを実装する"
+emoji: "🔐" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech"
-topics: ["GoogleCloud", "Monitoring", "ノーコード", "SSL証明書"]
+topics: ["GoogleCloud", "cloudmonitoring", "ノーコード", "ssl証明書"]
 published: false
 ---
 
