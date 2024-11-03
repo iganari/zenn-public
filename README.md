@@ -78,9 +78,13 @@ npx zenn new:article
 
 ### 記事の命名ルール
 
-Zenn にデプロイした場合は、記事の名前が URL になる
+Zenn にデプロイした場合は、記事のファイル名 (= slag)が URL になる
 
 元ネタは [Package GCP](https://github.com/iganari/package-gcp) なので、Package GCP でのネストが記事の名前と連動している形にする
+
+- slag のルール
+  - 半角英数字（a-z0-9）、ハイフン（-）、アンダースコア（_）の12〜50字の組み合わせにする必要がある
+
 
 ### 画像をいれる場合
 
