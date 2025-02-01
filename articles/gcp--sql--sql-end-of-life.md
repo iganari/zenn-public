@@ -3,7 +3,7 @@ title: "Cloud SQL の延長サポートの追加課金について"
 emoji: "💸" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech"
 topics: ["googlecloud", "cloudsql", "mysql", "postgresql"]
-published: false
+published: true
 ---
 
 ## 結論
