@@ -28,6 +28,8 @@ Upgrade your instances running end-of-life version before May 1, 2025 to prevent
 追加料金が発生しないようにするには、2025 年 5 月 1 日までにサポート終了バージョンを実行しているインスタンスをアップグレードしてください。
 ```
 
+スクリーンショット
+
 ![](https://raw.githubusercontent.com/iganari/artifacts/refs/heads/issues/23/googlecloud/sql/sql-end-of-life/2025-sql-end-of-life-01.png)
 
 ## どのバージョンが対象か
