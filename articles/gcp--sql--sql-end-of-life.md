@@ -56,14 +56,13 @@ https://cloud.google.com/sql/docs/mysql/db-versions#version-support-policy
 ## どれくらい追加課金されるの
 
 利用している vCPU の種類 (共有コア、占有コア)および、コア数で追加課金の料金が決まります
-
 例えば、「東京リージョンの vCPU 4 の占有コア(非冗長化)」だと、
 
 **1 時間あたり** $0.091 x 4 = **$0.364 の追加課金**
 
 になります
 
-詳細は以下
+詳細は以下を参照してください
 
 https://cloud.google.com/sql/pricing#extended-support-pricing
 
