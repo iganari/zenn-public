@@ -33,7 +33,7 @@ watch -n1 docker-compose ps zenn-local
 - [トラブルシュート] ログの確認
 
 ```
-docker-compose logs zenn-local
+docker compose logs zenn-local
 ```
 
 - [トラブルシュート] Docker 単体での起動確認
@@ -45,8 +45,8 @@ docker run -it -p 8080:8000 zenn-public-zenn-local /bin/bash
 - Docker Compose の停止および削除する
 
 ```
-docker-compose stop
-docker-compose rm -f
+docker compose stop
+docker compose rm -f
 docker ps -a | grep zenn-public-zenn-local | awk '{print $1}' | xargs docker rm -f
 docker rmi zenn-public-zenn-local
 ```
