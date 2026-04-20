@@ -1,6 +1,9 @@
-ARG _TAG='20.5-buster'
+ARG _TAG='25.9-bookworm'
 FROM node:${_TAG}
-# https://hub.docker.com/_/node?tab=tags&page=1&name=-alpine
+# https://hub.docker.com/_/node
+# bullseye = Debian 11
+# Bookworm = Debian 12
+
 
 RUN apt update \
     && apt install -y \
